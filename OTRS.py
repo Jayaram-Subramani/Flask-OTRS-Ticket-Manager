@@ -3,7 +3,7 @@ from pyotrs import Client, Article ,Ticket
 
 app = Flask(__name__)
 
-client = Client("http://app.autointelli.com:10480","root@localhost","fdPSRazwDP7wzJed")
+client = Client("OTRS URL","Username","Password")
 client.session_create()
 
 @app.route("/create_ticket", methods=["POST"])
